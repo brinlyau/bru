@@ -1058,4 +1058,12 @@ void HWDeviceDRM::UpdateMixerAttributes() {
                                      : mixer_attributes_.width;
 }
 
+DisplayError HWDeviceDRM::SetDynamicDSIClock(uint64_t bitclk) {
+  return kErrorNotSupported;
+}
+
+DisplayError HWDeviceDRM::GetDynamicDSIClock(uint64_t *bitclk) {
+  return kErrorNotSupported;
+}
+
 }  // namespace sdm
